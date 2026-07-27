@@ -13,3 +13,12 @@ a:link {
 img{
     width:200px;
 }
+
+nav{
+    margin: 20px;
+}
+
+section{
+    margin: 40px 0;
+    padding: 20px;
+}
