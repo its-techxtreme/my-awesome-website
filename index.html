@@ -1,38 +1,115 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title> My very Awesome Site</title>
-    </head>
-    <body>
-        <nav>
-            <a href="#home">Home</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#contact">Contact</a>
-        </nav>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athan — personal site</title>
+    <meta
+      name="description"
+      content="Athan's personal site — OutreachOS, Project AP-I, and other things I'm building."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-        <section id="home">
-            <h1>This is a Personal Site for me</h1>
-            <p>Umm Basically this is also my first time attending a workshop at hackclub</p>
-            <p>Right now Jenin from Hack-Club is teaching us how to do it  </p>
-        </section>
-        
-        <section id="projects">
-            <h2> My Stardance Projects</h2>
-            <h3>OutreachOS</h3>
-            <img src="https://stardance.hackclub.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTc2Mjk3LCJwdXIiOiJibG9iX2lkIn19--f29590bf34a0099f78d4a0b8a9d4c2ed8b3820d8/image_2026-07-19_154805892.png">
-            <b>
-            <a href="https://stardance.hackclub.com/projects/33617">Open Project on Stardance</a>
-            <h3>Project AP-I</h3>
-            <img src="https://stardance.hackclub.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTQ2MDU2LCJwdXIiOiJibG9iX2lkIn19--58e6089dd29f34ce993f005a636ec1187f481d73/image_2026-07-12_130611299.png">
-            <b>
-            <a href="https://stardance.hackclub.com/projects/33617">Open Project on Stardance</a>        
-        </section>
+    <header id="home" class="hero">
+      <p class="eyebrow">hey, I'm Athan</p>
+      <h1>I build small tools for messy real-world workflows.</h1>
+      <p>
+        Mostly web apps. Currently obsessed with outreach tooling and
+        short-form upload automation — stuff that saves me from spreadsheet
+        chaos and tab hell.
+      </p>
+      <p class="muted">
+        This page is a quick map of what I'm shipping. Click into a project if
+        you want the full story.
+      </p>
+    </header>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Want to say hi? Reach me here :-] </p>
-            <p>GitHub: <a href="https://github.com/its-techxtreme">its-techxtreme</a></p>
-            <p>Email: your-email@example.com</p>
-        </section>
-    </body>
-</html>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="section-intro">
+        Two live ones I'm proud of. Both started as “I'm tired of doing this by
+        hand” problems.
+      </p>
+
+      <div class="projects">
+        <article class="card">
+          <h3>OutreachOS</h3>
+          <img
+            src="https://outreachos.techxtreme.me/brand/og-outreachos.png"
+            alt="OutreachOS — personal lead vault"
+          />
+          <p>
+            A personal lead vault for cold outreach. Import messy Excel sheets,
+            filter by niche / country / status, keep call scripts sticky, and
+            stop losing track of who you already dialed.
+          </p>
+          <div class="links">
+            <a class="btn" href="https://outreachos.techxtreme.me" target="_blank" rel="noopener noreferrer">
+              Open live site
+            </a>
+            <a class="btn btn-ghost" href="https://stardance.hackclub.com/projects/33617" target="_blank" rel="noopener noreferrer">
+              Project page
+            </a>
+            <a class="text-link" href="https://github.com/its-techxtreme/OutreachOS" target="_blank" rel="noopener noreferrer">
+              Source on GitHub →
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project AP-I</h3>
+          <img
+            src="https://stardance.hackclub.com/projects/33973/og_image"
+            alt="Project AP-I preview"
+          />
+          <p>
+            A queue for short-form uploads across niches (memes, anime, sports).
+            Drop a link once, pick the niche, and let the pipeline handle the
+            boring download → caption → upload loop.
+          </p>
+          <div class="links">
+            <a class="btn btn-ghost" href="https://stardance.hackclub.com/projects/33973" target="_blank" rel="noopener noreferrer">
+              Project page
+            </a>
+            <a class="text-link" href="https://github.com/its-techxtreme" target="_blank" rel="noopener noreferrer">
+              More on GitHub →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Got feedback, a weird Excel sheet that broke OutreachOS, or just want to
+        say hi? Reach out.
+      </p>
+      <ul class="contact-list">
+        <li>
+          GitHub:
+          <a href="https://github.com/its-techxtreme" target="_blank" rel="noopener noreferrer">
+            @its-techxtreme
+          </a>
+        </li>
+        <li>
+          Email:
+          <a href="mailto:techxtremebuisness@gmail.com">
+            techxtremebuisness@gmail.com
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Built by Athan · still polishing edges on purpose</p>
+    </footer>
+  </body>
+  </html>

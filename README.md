@@ -1,13 +1,22 @@
-### My-Awesome-website 
-This is a website I made during the Hackclub Workshop, lets hope this a very awesome one.
-I added the following things:
--> Some Text which tells about workshop
--> Few images of my stardance projects
--> Few links to my projects
--> A css file
+# Athan's personal site
 
----
+Simple static homepage for the things I'm building.
 
-#You can access it at:
+**Live:** https://its-techxtreme.github.io/my-awesome-website/
 
-https://its-techxtreme.github.io/my-awesome-website/
+## What's on it
+
+- **OutreachOS** — personal lead vault for cold outreach  
+  https://outreachos.techxtreme.me
+- **Project AP-I** — short-form upload queue across niches
+
+## Stack
+
+Plain HTML + CSS. Hosted on GitHub Pages.
+
+## Local
+
+Open `index.html` in a browser, or:
+
+```bash
+npx serve .

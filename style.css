@@ -1,24 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    text-align: center;
-    background-color: aqua;
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    align-content: center;
+  margin: 0;
+  background: #e8fbff;
+  color: #141414;
+  font-family: "Lucida Sans", "Lucida Grande", Geneva, Verdana, sans-serif;
+  line-height: 1.55;
 }
 
-a:link {
-    color: crimson;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 18px 16px;
+  font-weight: 700;
 }
 
-img{
-    width:200px;
+nav a,
+a {
+  color: #0b57d0;
+  text-decoration: none;
 }
 
-nav{
-    margin: 20px;
+nav a:hover,
+a:hover {
+  text-decoration: underline;
 }
 
-section{
-    margin: 40px 0;
-    padding: 20px;
+.hero,
+section,
+footer {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 16px 20px 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  line-height: 1.2;
+}
+
+.muted,
+.section-intro {
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 3px solid #141414;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 5px 5px 0 #141414;
+}
+
+.card h3 {
+  margin: 0 0 12px;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #141414;
+  border-radius: 10px;
+  background: #eee;
+}
+
+.card p {
+  margin: 12px 0 14px;
+  min-height: 72px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 9px 12px;
+  background: #141414;
+  color: #fff !important;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-size: 0.92rem;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.btn-ghost {
+  background: #fff;
+  color: #141414 !important;
+  border: 2px solid #141414;
+}
+
+.btn-ghost:hover {
+  background: #f3f3f3;
+}
+
+.text-link {
+  font-size: 0.92rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.contact-list li {
+  margin: 8px 0;
+}
+
+footer {
+  padding-bottom: 40px;
+  color: #555;
+  font-size: 0.9rem;
+  text-align: center;
 }
